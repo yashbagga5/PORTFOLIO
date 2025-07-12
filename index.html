@@ -1,0 +1,451 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Yash Bagga | Data Analyst</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- Animated side decorations -->
+  <div class="left-decoration">
+    <div class="star1"></div>
+    <div class="star2"></div>
+    <div class="star3"></div>
+  </div>
+  <div class="right-decoration">
+    <div class="star1"></div>
+    <div class="star2"></div>
+    <div class="star3"></div>
+  </div>
+
+  <header>
+    <div class="header-content" style="display: flex; justify-content: space-between; align-items: center;">
+      <div class="profile-section">
+        <div class="profile-img-container">
+          <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT1LaO5LxdiuQiuUl4PZN1Bjf6hjnLxUZsjqg&s" alt="Profile Photo" class="profile-img" />
+        </div>
+        <div class="profile-info">
+          <h1>Yash Bagga</h1>
+          <p>Data Analyst | Machine Learning Enthusiast</p>
+          <p class="academic-info">BTECH - Computer Science Engineering 2026</p>
+        </div>
+      </div>
+      <div class="header-intro">
+        <div class="header-hey">Hey! there,</div>
+        <div class="header-name">I'm Yash Bagga, </div>
+        <div class="header-name">Data Science Enthusiast </div>
+        <div class="header-rotating"><span id="rotating-point">Creating ML models</span></div>
+      </div>
+    </div>
+  </header>
+
+  <!-- Navigation Tabs -->
+  <nav class="tab-navigation">
+    <div class="nav-container">
+      <button class="tab-btn active" data-tab="overview">
+        <i class="fas fa-home"></i>
+        Overview
+      </button>
+      <button class="tab-btn" data-tab="internships">
+        <i class="fas fa-briefcase"></i>
+        Internships
+      </button>
+      <button class="tab-btn" data-tab="projects">
+        <i class="fas fa-code"></i>
+        Projects
+      </button>
+      <button class="tab-btn" data-tab="leadership">
+        <i class="fas fa-trophy"></i>
+        Leadership
+      </button>
+      <button class="tab-btn" data-tab="skills">
+        <i class="fas fa-tools"></i>
+        Skills
+      </button>
+      <button class="tab-btn" data-tab="contact">
+        <i class="fas fa-address-card"></i>
+        Contact
+      </button>
+    </div>
+  </nav>
+
+  <!-- Tab Content -->
+  <main class="tab-content">
+    <!-- Overview Tab -->
+    <div id="overview" class="tab-pane active">
+      <section class="overview-section">
+        <div class="section-header">
+          <div class="icon-container">
+            <i class="fas fa-chart-line"></i>
+          </div>
+          <h2>Portfolio Overview</h2>
+        </div>
+        
+        <!-- About Section integrated into Overview -->
+        <div class="about-content">
+          <p>
+            Hi, I'm Yash Bagga — a data enthusiast who believes numbers tell stories, and I love decoding them into decisions that matter.
+          </p>
+          <p>
+            I specialize in data analytics, machine learning, and transforming raw data into actionable insights using tools like Python, SQL, and a touch of caffeine.
+          </p>
+          <p>
+            From forecasting stock trends to predicting hospital readmissions and building job-match models with BERT, I enjoy crafting smart, scalable solutions.
+          </p>
+          <p>
+            I've also led with impact — as Chief Advisor of E-Cell, former VP – Incubation, and SIG Lead at IEEE MSIT, mentoring peers and driving tech-forward initiatives.
+          </p>
+          <p>
+            Whether it's simplifying data, automating workflows, or designing dashboards that just make sense, I'm all in — especially if there's chai involved.
+          </p>
+        </div>
+        
+        <div class="overview-grid">
+          <div class="overview-card">
+            <div class="overview-icon">
+              <i class="fas fa-briefcase"></i>
+            </div>
+            <h3>Internships</h3>
+            <p>3 diverse internships across data analysis, machine learning, and digital marketing. Experience with Python, SQL, Power BI, and campaign optimization.</p>
+            <button class="view-details-btn" data-tab="internships">View Details</button>
+          </div>
+
+          <div class="overview-card">
+            <div class="overview-icon">
+              <i class="fas fa-code"></i>
+            </div>
+            <h3>Projects</h3>
+            <p>4 major projects including healthcare ML, financial forecasting, NLP job matching, and business intelligence dashboards with live demos.</p>
+            <button class="view-details-btn" data-tab="projects">View Details</button>
+          </div>
+
+          <div class="overview-card">
+            <div class="overview-icon">
+              <i class="fas fa-trophy"></i>
+            </div>
+            <h3>Leadership</h3>
+            <p>5 leadership roles including Chief Advisor at E-Cell, SIG Lead at IEEE, and organizer of major events like E-Summit and ENVA cultural fest.</p>
+            <button class="view-details-btn" data-tab="leadership">View Details</button>
+          </div>
+
+          <div class="overview-card">
+            <div class="overview-icon">
+              <i class="fas fa-tools"></i>
+            </div>
+            <h3>Skills</h3>
+            <p>Comprehensive skill set including Python, SQL, Machine Learning, Power BI, Tableau, NLP, Git, and various data science tools.</p>
+            <button class="view-details-btn" data-tab="skills">View Details</button>
+          </div>
+
+          <div class="overview-card">
+            <div class="overview-icon">
+              <i class="fas fa-address-card"></i>
+            </div>
+            <h3>Contact</h3>
+            <p>Get in touch through phone, email, LinkedIn, or GitHub. Available for opportunities in data science, analytics, and machine learning.</p>
+            <button class="view-details-btn" data-tab="contact">View Details</button>
+          </div>
+        </div>
+      </section>
+    </div>
+
+    <!-- Internships Tab -->
+    <div id="internships" class="tab-pane">
+      <section id="internships">
+        <div class="section-header">
+          <div class="icon-container">
+            <i class="fas fa-briefcase"></i>
+          </div>
+          <h2>Internships</h2>
+        </div>
+        <ul>
+          <li>
+            <div class="internship-icon">
+              <i class="fas fa-chart-bar"></i>
+            </div>
+            <div class="internship-content">
+              <strong>Data Analyst Intern – Brainalyst, Gurugram</strong>
+              <div class="internship-description">
+                Collected, cleaned, and analyzed user data using Python, SQL, and survey tools to generate insights. Conducted EDA and sentiment analysis using NLTK and SQL, uncovering 3 key market trends. Visualized data insights using Tableau and Matplotlib, enabling strategic improvements in product decisions.
+              </div>
+            </div>
+          </li>
+          <li>
+            <div class="internship-icon">
+              <i class="fas fa-brain"></i>
+            </div>
+            <div class="internship-content">
+              <strong>Data Science Intern – Zidio Development, Bengaluru</strong>
+              <div class="internship-description">
+                Built automated ETL pipelines to process raw data using Python and SQL, increasing processing efficiency. Developed and deployed machine learning models (scikit-learn), improving internal tools' performance. Delivered insights through model evaluation, feature engineering, and hyperparameter tuning.
+              </div>
+            </div>
+          </li>
+          <li>
+            <div class="internship-icon">
+              <i class="fas fa-bullhorn"></i>
+            </div>
+            <div class="internship-content">
+              <strong>Digital Marketing Intern – Yash Foundation, Pune</strong>
+              <div class="internship-description">
+                Executed cross-platform digital campaigns, enhancing audience reach and target engagement. Analyzed performance metrics using Google Analytics and Meta Ads Manager, optimizing campaign ROI.
+              </div>
+            </div>
+          </li>
+        </ul>
+      </section>
+    </div>
+
+    <!-- Projects Tab -->
+    <div id="projects" class="tab-pane">
+      <section id="projects">
+        <div class="section-header">
+          <div class="icon-container">
+            <i class="fas fa-code"></i>
+          </div>
+          <h2>Projects</h2>
+        </div>
+        <ul>
+          <li>
+            <div class="project-icon">
+              <i class="fas fa-heartbeat"></i>
+            </div>
+            <div class="project-content">
+              <strong>Heartelligence:</strong> Heart failure readmission predictor (86% accuracy)
+              <div class="project-links">
+                <a href="https://github.com/yashbagga5/Heartelligence" target="_blank">
+                  <i class="fab fa-github"></i>
+                  View Code
+                </a>
+                <a href="https://heartelligence-thp3weu6qguun5bfyjbblf.streamlit.app/" target="_blank">
+                  <i class="fas fa-external-link-alt"></i>
+                  Live Demo
+                </a>
+              </div>
+            </div>
+          </li>
+          <li>
+            <div class="project-icon">
+              <i class="fas fa-chart-line"></i>
+            </div>
+            <div class="project-content">
+              <strong>Stock Sight:</strong> ARIMA/SARIMA-based stock forecasting tool
+              <div class="project-links">
+                <a href="https://github.com/yashbagga5/HOUSEWORTH-PRO" target="_blank">
+                  <i class="fab fa-github"></i>
+                  View Code
+                </a>
+                <a href="https://houseworth-pro-rgjn76zjzrcjrpwz3z5sap.streamlit.app/" target="_blank">
+                  <i class="fas fa-external-link-alt"></i>
+                  Live Demo
+                </a>
+              </div>
+            </div>
+          </li>
+          <li>
+            <div class="project-icon">
+              <i class="fas fa-briefcase"></i>
+            </div>
+            <div class="project-content">
+              <strong>Job Recommendation System:</strong> BERT-powered resume-job matching
+              <div class="project-links">
+                <a href="https://github.com/yashbagga5/JobGenie" target="_blank">
+                  <i class="fab fa-github"></i>
+                  View Code
+                </a>
+                <a href="https://jobgenie-9vcms3zpbwiugl48aoafak.streamlit.app/" target="_blank">
+                  <i class="fas fa-external-link-alt"></i>
+                  Live Demo
+                </a>
+              </div>
+            </div>
+          </li>
+          <li>
+            <div class="project-icon">
+              <i class="fas fa-mobile-alt"></i>
+            </div>
+            <div class="project-content">
+              <strong>Mobile Sales BI:</strong> Power BI dashboard for sales analysis
+              <div class="project-links">
+                <a href="https://github.com/yashbagga5/MOBILE-SALES-ANALYSIS" target="_blank">
+                  <i class="fab fa-github"></i>
+                  View Code
+                </a>
+                <a href="https://huggingface.co/spaces/yashbagga5/MOBILE-SALES-ANALYSIS" target="_blank">
+                  <i class="fas fa-external-link-alt"></i>
+                  Live Demo
+                </a>
+              </div>
+            </div>
+          </li>
+        </ul>
+      </section>
+    </div>
+
+    <!-- Leadership Tab -->
+    <div id="leadership" class="tab-pane">
+      <section id="experience">
+        <div class="section-header">
+          <div class="icon-container">
+            <i class="fas fa-trophy"></i>
+          </div>
+          <h2>Leadership & Experience</h2>
+        </div>
+        <ul>
+          <li>
+            <div class="experience-icon">
+              <i class="fas fa-crown"></i>
+            </div>
+            <div class="experience-content">
+              <strong>Chief Advisor – E-Cell | Ex-VP Incubation</strong>
+              <div class="experience-description">
+                Guided strategic direction and mentorship within the E-Cell, supporting student-led startups, ideation programs, and incubation initiatives. Oversaw cross-functional teams, elevated event impact, and fostered a culture of innovation and entrepreneurship across campus.
+              </div>
+            </div>
+          </li>
+          <li>
+            <div class="experience-icon">
+              <i class="fas fa-users"></i>
+            </div>
+            <div class="experience-content">
+              <strong>SIG Lead – IEEE MSIT</strong>
+              <div class="experience-description">
+                Led the Special Interest Group (SIG) under IEEE MSIT, organizing peer-learning sessions, hands-on workshops, and collaborative projects focused on data science and machine learning. Promoted a learning-by-doing environment and mentored juniors on technical growth paths.
+              </div>
+            </div>
+          </li>
+          <li>
+            <div class="experience-icon">
+              <i class="fas fa-microphone-alt"></i>
+            </div>
+            <div class="experience-content">
+              <strong>Organizer – E-Summit (Entrepreneurship Summit)</strong>
+              <div class="experience-description">
+                Led the end-to-end execution of the college's flagship entrepreneurial event, E-Summit, including curating high-impact speaker lineups, managing strategic industry partnerships, and driving marketing campaigns. Ensured smooth coordination between teams and delivered a high-engagement experience for aspiring entrepreneurs and innovators.
+              </div>
+            </div>
+          </li>
+          <li>
+            <div class="experience-icon">
+              <i class="fas fa-gavel"></i>
+            </div>
+            <div class="experience-content">
+              <strong>Judge – UPStart Ideathon</strong>
+              <div class="experience-description">
+                Invited to evaluate early-stage startup ideas and business pitches at UPStart Ideathon, assessing them on innovation, execution feasibility, market relevance, and team potential. Provided constructive feedback to participants and helped identify high-potential ideas for incubation and mentorship.
+              </div>
+            </div>
+          </li>
+          <li>
+            <div class="experience-icon">
+              <i class="fas fa-calendar-alt"></i>
+            </div>
+            <div class="experience-content">
+              <strong>Organizer – ENVA (Cultural Fest)</strong>
+              <div class="experience-description">
+                Organized and managed ENVA, the college's premier annual cultural fest, overseeing event planning, team coordination, and on-ground execution. Spearheaded initiatives to boost student participation, enhance audience engagement, and ensure the fest's creative and operational success.
+              </div>
+            </div>
+          </li>
+        </ul>
+      </section>
+    </div>
+
+    <!-- Skills Tab -->
+    <div id="skills" class="tab-pane">
+      <section id="skills">
+        <div class="section-header">
+          <div class="icon-container">
+            <i class="fas fa-tools"></i>
+          </div>
+          <h2>Skills</h2>
+        </div>
+        <div class="skills-grid">
+          <div class="skill-item">
+            <i class="fab fa-python"></i>
+            <span>Python</span>
+          </div>
+          <div class="skill-item">
+            <i class="fas fa-database"></i>
+            <span>SQL</span>
+          </div>
+          <div class="skill-item">
+            <i class="fas fa-chart-pie"></i>
+            <span>Power BI</span>
+          </div>
+          <div class="skill-item">
+            <i class="fas fa-robot"></i>
+            <span>Scikit-learn</span>
+          </div>
+          <div class="skill-item">
+            <i class="fas fa-brain"></i>
+            <span>Machine Learning</span>
+          </div>
+          <div class="skill-item">
+            <i class="fas fa-stream"></i>
+            <span>Streamlit</span>
+          </div>
+          <div class="skill-item">
+            <i class="fas fa-chart-area"></i>
+            <span>Tableau</span>
+          </div>
+          <div class="skill-item">
+            <i class="fas fa-search"></i>
+            <span>EDA</span>
+          </div>
+          <div class="skill-item">
+            <i class="fas fa-comments"></i>
+            <span>NLP</span>
+          </div>
+          <div class="skill-item">
+            <i class="fab fa-git-alt"></i>
+            <span>Git</span>
+          </div>
+        </div>
+      </section>
+    </div>
+
+    <!-- Contact Tab -->
+    <div id="contact" class="tab-pane">
+      <section id="contact">
+        <div class="section-header">
+          <div class="icon-container">
+            <i class="fas fa-address-card"></i>
+          </div>
+          <h2>Contact</h2>
+        </div>
+        <div class="contact-icons">
+          <a href="tel:+919145835906" class="contact-icon">
+            <i class="fas fa-phone"></i>
+            <span>+91 91458 35906</span>
+          </a>
+          <a href="mailto:yashbagga5@gmail.com" class="contact-icon">
+            <i class="fas fa-envelope"></i>
+            <span>yashbagga5@gmail.com</span>
+          </a>
+          <a href="https://www.linkedin.com/in/yash-bagga-a32b1a256" target="_blank" class="contact-icon">
+            <i class="fab fa-linkedin"></i>
+            <span>LinkedIn</span>
+          </a>
+          <a href="https://github.com/yashbagga5" target="_blank" class="contact-icon">
+            <i class="fab fa-github"></i>
+            <span>GitHub</span>
+          </a>
+        </div>
+      </section>
+    </div>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Yash Bagga | Built with <i class="fas fa-laptop-code"></i> and <i class="fas fa-coffee"></i></p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
